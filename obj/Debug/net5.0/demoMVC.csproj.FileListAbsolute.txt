@@ -38,3 +38,6 @@ C:\DoNet\demoMVC\obj\Debug\net5.0\demoMVC.pdb
 C:\DoNet\demoMVC\obj\Debug\net5.0\demoMVC.genruntimeconfig.cache
 C:\DoNet\demoMVC\obj\Debug\net5.0\demoMVC.csproj.CopyComplete
 C:\DoNet\demoMVC\obj\Debug\net5.0\Razor\Views\Shared\_LayoutNew.cshtml.g.cs
+C:\DoNet\demoMVC\obj\Debug\net5.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\DoNet\demoMVC\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\DoNet\demoMVC\obj\Debug\net5.0\Razor\Views\HelloWorld\GetName.cshtml.g.cs

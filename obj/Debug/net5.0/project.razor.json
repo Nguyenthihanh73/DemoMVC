@@ -15619,8 +15619,18 @@
   "RootNamespace": "demoMVC",
   "Documents": [
     {
+      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\DoNet\\demoMVC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DoNet\\demoMVC\\Views\\HelloWorld\\GetName.cshtml",
+      "TargetPath": "Views\\HelloWorld\\GetName.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15631,6 +15641,11 @@
     {
       "FilePath": "c:\\DoNet\\demoMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\DoNet\\demoMVC\\Views\\HelloWorld\\Index.cshtml",
+      "TargetPath": "Views\\HelloWorld\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
