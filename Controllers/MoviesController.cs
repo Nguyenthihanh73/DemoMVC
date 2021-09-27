@@ -20,9 +20,20 @@ namespace demoMVC.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Movie.ToListAsync());
+            //cau truc truy van linq
+            //select ** from movie
+            var movies = from m in _context.Movie
+                 select m;
+
+             if (!String.IsNullOrEmpty(searchString))
+        {
+             movies = movies.Where(s => s.Title.Contains(searchString));
+        }
+
+             return View(await movies.ToListAsync());
+            
         }
 
         // GET: Movies/Details/5
@@ -72,7 +83,7 @@ namespace demoMVC.Controllers
             {
                 return NotFound();
             }
-
+        //xu ly bat dong bo, tra ve ban ghi voi id tuong ung
             var movie = await _context.Movie.FindAsync(id);
             if (movie == null)
             {
