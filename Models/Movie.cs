@@ -1,21 +1,38 @@
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel;
 using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace demoMVC.Models
 {
     public class Movie
-    
-    {
-        [Key]
-        public int Id { get; set; }
-        public string Title { get; set; }
-        [Required (ErrorMessage="Title is required.")]
-        [MaxLength(15)]
-        [MinLength(3)]
-        [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal Price { get; set; }
-        public int MyProperty { get; set; }
-    }
+{
+    public int Id { get; set; }
+
+    [StringLength(60, MinimumLength = 3)]
+    [Required]
+    public string Title { get; set; }
+
+    [Display(Name = "Release Date")]
+    [DataType(DataType.Date)]
+    public DateTime ReleaseDate { get; set; }
+
+    [Range(1, 100)]
+    [DataType(DataType.Currency)]
+    [Column(TypeName="decimal(18,2)")]
+    public decimal Price { get; set; }
+
+    [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
+    [Required]
+    [StringLength(30)]
+    public string Genre { get; set; }
+
+    [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
+    [StringLength(5)]
+    [Required]
+    public string Rating { get; set; }
+    //abc@xyz.com
+    [EmailAddress]
+    public string Email{get; set; }
+}
 }

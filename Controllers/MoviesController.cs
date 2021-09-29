@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,33 +8,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using demoMVC.Models;
 using demoMVC.Data;
+{
+     
+}
 
 namespace demoMVC.Controllers
 {
     public class MoviesController : Controller
     {
-        private readonly ApplicationContext _context;
+        private readonly MvcMovieContext _context;
 
-        public MoviesController(ApplicationContext context)
+        public MoviesController(MVcMovieContext context)
         {
             _context = context;
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index()
         {
-            //cau truc truy van linq
-            //select ** from movie
-            var movies = from m in _context.Movie
-                 select m;
-
-             if (!String.IsNullOrEmpty(searchString))
-        {
-             movies = movies.Where(s => s.Title.Contains(searchString));
-        }
-
-             return View(await movies.ToListAsync());
-            
+            return View(await _context.Movie.ToListAsync());
         }
 
         // GET: Movies/Details/5
@@ -65,8 +58,11 @@ namespace demoMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,MyProperty")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
+            try
+            {
+            //neu rang buoc o model thoa man
             if (ModelState.IsValid)
             {
                 _context.Add(movie);
@@ -74,6 +70,13 @@ namespace demoMVC.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(movie);
+            }
+            catch
+            {
+                // viet nhung lenh xu ly loi co the phat sinh
+                ModelState.AddModelError("","Mat ket noi toi may chu");
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         // GET: Movies/Edit/5
@@ -83,7 +86,7 @@ namespace demoMVC.Controllers
             {
                 return NotFound();
             }
-        //xu ly bat dong bo, tra ve ban ghi voi id tuong ung
+
             var movie = await _context.Movie.FindAsync(id);
             if (movie == null)
             {
@@ -97,7 +100,7 @@ namespace demoMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,MyProperty")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
             if (id != movie.Id)
             {
