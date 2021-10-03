@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using demoMVC.Models;
+using demoMVC.Data;
 namespace demoMVC.Data
 {
     public class ApplicationContext : DbContext

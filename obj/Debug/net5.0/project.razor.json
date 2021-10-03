@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\DoNet\\demoMVC\\demoMVC.csproj",
+  "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\demoMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,78 +15619,78 @@
   "RootNamespace": "demoMVC",
   "Documents": [
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Movies\\Edit.cshtml",
-      "TargetPath": "Views\\Movies\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\HelloWorld\\GetName.cshtml",
-      "TargetPath": "Views\\HelloWorld\\GetName.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\HelloWorld\\Index.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\HelloWorld\\Index.cshtml",
       "TargetPath": "Views\\HelloWorld\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Movies\\Delete.cshtml",
-      "TargetPath": "Views\\Movies\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Movies\\Index.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Movies\\Index.cshtml",
       "TargetPath": "Views\\Movies\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Movies\\Details.cshtml",
-      "TargetPath": "Views\\Movies\\Details.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Movies\\Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\HelloWorld\\GetName.cshtml",
+      "TargetPath": "Views\\HelloWorld\\GetName.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Shared\\_LayoutNew.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Shared\\_LayoutNew.cshtml",
       "TargetPath": "Views\\Shared\\_LayoutNew.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\DoNet\\demoMVC\\Views\\Movies\\Create.cshtml",
-      "TargetPath": "Views\\Movies\\Create.cshtml",
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Movies\\Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Movies\\Edit.cshtml",
+      "TargetPath": "Views\\Movies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HANH NGUYEN\\Documents\\DoNet\\demoMVC\\Views\\Movies\\Details.cshtml",
+      "TargetPath": "Views\\Movies\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
